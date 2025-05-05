@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EDEC13D22DC8B11A0092A9F4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EDEC13D12DC8B11A0092A9F4 /* SnapKit */; };
+		EDEC13D42DC8B1200092A9F4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EDEC13D32DC8B1200092A9F4 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EDEC13AF2DC8AE2F0092A9F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -48,16 +53,6 @@
 			path = MovieApp;
 			sourceTree = "<group>";
 		};
-		EDEC13B12DC8AE2F0092A9F4 /* MovieAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MovieAppTests;
-			sourceTree = "<group>";
-		};
-		EDEC13BB2DC8AE2F0092A9F4 /* MovieAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MovieAppUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEC13D22DC8B11A0092A9F4 /* SnapKit in Frameworks */,
+				EDEC13D42DC8B1200092A9F4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				EDEC13972DC8AE2D0092A9F4 /* MovieApp */,
-				EDEC13B12DC8AE2F0092A9F4 /* MovieAppTests */,
-				EDEC13BB2DC8AE2F0092A9F4 /* MovieAppUITests */,
+				EDEC13D02DC8B11A0092A9F4 /* Frameworks */,
 				EDEC13962DC8AE2D0092A9F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +99,13 @@
 				EDEC13B82DC8AE2F0092A9F4 /* MovieAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EDEC13D02DC8B11A0092A9F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +128,8 @@
 			);
 			name = MovieApp;
 			packageProductDependencies = (
+				EDEC13D12DC8B11A0092A9F4 /* SnapKit */,
+				EDEC13D32DC8B1200092A9F4 /* Alamofire */,
 			);
 			productName = MovieApp;
 			productReference = EDEC13952DC8AE2D0092A9F4 /* MovieApp.app */;
@@ -142,9 +147,6 @@
 			);
 			dependencies = (
 				EDEC13B02DC8AE2F0092A9F4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				EDEC13B12DC8AE2F0092A9F4 /* MovieAppTests */,
 			);
 			name = MovieAppTests;
 			packageProductDependencies = (
@@ -165,9 +167,6 @@
 			);
 			dependencies = (
 				EDEC13BA2DC8AE2F0092A9F4 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				EDEC13BB2DC8AE2F0092A9F4 /* MovieAppUITests */,
 			);
 			name = MovieAppUITests;
 			packageProductDependencies = (
@@ -208,6 +207,10 @@
 			);
 			mainGroup = EDEC138C2DC8AE2D0092A9F4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EDEC13CE2DC8B1080092A9F4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				EDEC13CF2DC8B1150092A9F4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EDEC13962DC8AE2D0092A9F4 /* Products */;
 			projectDirPath = "";
@@ -293,9 +296,9 @@
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +323,9 @@
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,6 +566,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDEC13CE2DC8B1080092A9F4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		EDEC13CF2DC8B1150092A9F4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDEC13D12DC8B11A0092A9F4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDEC13CE2DC8B1080092A9F4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		EDEC13D32DC8B1200092A9F4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDEC13CF2DC8B1150092A9F4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EDEC138D2DC8AE2D0092A9F4 /* Project object */;
 }
